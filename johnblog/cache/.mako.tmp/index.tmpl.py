@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 9
-_modified_time = 1383479071.352308
+_modified_time = 1383482743.800099
 _enable_loop = True
-_template_filename = u'/home/mille_j/nikoladev/johnnikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/index.tmpl'
+_template_filename = u'/home/mille_j/JohnBlog/nikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/index.tmpl'
 _template_uri = u'index.tmpl'
 _source_encoding = 'utf-8'
 _exports = [u'content']
@@ -52,7 +52,7 @@ def render_body(context,**pageargs):
             context['self'].content(**pageargs)
         
 
-        # SOURCE LINE 22
+        # SOURCE LINE 29
         __M_writer(u'\n')
         return ''
     finally:
@@ -76,38 +76,51 @@ def render_content(context,**pageargs):
         # SOURCE LINE 6
         for post in posts:
             # SOURCE LINE 7
-            __M_writer(u'        <div class="postbox">\n        <h1><a href="')
+            __M_writer(u'        <div class="postbox h-entry">\n        <h1 class="p-name"><a href="')
             # SOURCE LINE 8
             __M_writer(unicode(post.permalink()))
-            __M_writer(u'">')
+            __M_writer(u'" class="u-url">')
             __M_writer(unicode(post.title()))
             __M_writer(u'</a>\n        <small>&nbsp;&nbsp;\n             ')
             # SOURCE LINE 10
             __M_writer(unicode(messages("Posted")))
-            __M_writer(u': <time class="published" datetime="')
+            __M_writer(u': <time class="published dt-published" datetime="')
             __M_writer(unicode(post.date.isoformat()))
             __M_writer(u'">')
             __M_writer(unicode(post.formatted_date(date_format)))
-            __M_writer(u'</time>\n        </small></h1>\n        <hr>\n        ')
+            __M_writer(u'</time>\n        </small></h1>\n        <hr>\n')
             # SOURCE LINE 13
-            __M_writer(unicode(post.text(teaser_only=index_teasers)))
-            __M_writer(u'\n')
-            # SOURCE LINE 14
-            if not post.meta('nocomments'):
+            if index_teasers:
+                # SOURCE LINE 14
+                __M_writer(u'        <div class="p-summary">\n        ')
                 # SOURCE LINE 15
+                __M_writer(unicode(post.text(teaser_only=True)))
+                __M_writer(u'\n')
+                # SOURCE LINE 16
+            else:
+                # SOURCE LINE 17
+                __M_writer(u'        <div class="e-content">\n        ')
+                # SOURCE LINE 18
+                __M_writer(unicode(post.text(teaser_only=False)))
+                __M_writer(u'\n')
+            # SOURCE LINE 20
+            __M_writer(u'        </div>\n')
+            # SOURCE LINE 21
+            if not post.meta('nocomments'):
+                # SOURCE LINE 22
                 __M_writer(u'            ')
                 __M_writer(unicode(comments.comment_link(post.permalink(), post._base_path)))
                 __M_writer(u'\n')
-            # SOURCE LINE 17
+            # SOURCE LINE 24
             __M_writer(u'        </div>\n')
-        # SOURCE LINE 19
+        # SOURCE LINE 26
         __M_writer(u'    ')
         __M_writer(unicode(helper.html_pager()))
         __M_writer(u'\n    ')
-        # SOURCE LINE 20
+        # SOURCE LINE 27
         __M_writer(unicode(comments.comment_link_script()))
         __M_writer(u'\n\t')
-        # SOURCE LINE 21
+        # SOURCE LINE 28
         __M_writer(unicode(helper.mathjax_script(posts)))
         __M_writer(u'\n')
         return ''

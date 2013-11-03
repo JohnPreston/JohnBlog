@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 9
-_modified_time = 1383479071.838923
+_modified_time = 1383482744.309384
 _enable_loop = True
-_template_filename = u'/home/mille_j/nikoladev/johnnikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/story.tmpl'
+_template_filename = u'/home/mille_j/JohnBlog/nikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/story.tmpl'
 _template_uri = u'story.tmpl'
 _source_encoding = 'utf-8'
 _exports = [u'content', u'extra_head']
@@ -80,7 +80,7 @@ def render_content(context,**pageargs):
         # SOURCE LINE 8
         __M_writer(u'\n')
         # SOURCE LINE 9
-        if title:
+        if title and not post.meta('hidetitle'):
             # SOURCE LINE 10
             __M_writer(u'    <h1>')
             __M_writer(unicode(title))

@@ -6,83 +6,83 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http:///2013/index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///archive.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/bfebs.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/bfebs.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/cloud-computing.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/cloud-computing.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/ebs.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/ebs.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/eucalyptus.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/eucalyptus.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///galleries/ews-front/index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///galleries/ews-front/rss.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///galleries/index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///galleries/rss.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///listings/index.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///posts/create-a-bebs-emi-with-eucalyptus.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///posts/eucalyptus-create-a-bfebs.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///rss.xml</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///stories/create-a-bf-ebs-with-eucalyptus.html</loc>
@@ -90,7 +90,7 @@
  </url>
  <url>
   <loc>http:///stories/create-a-bfebs.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///stories/eucalyptus.html</loc>
@@ -98,10 +98,10 @@
  </url>
  <url>
   <loc>http:///stories/welcome.html</loc>
-  <lastmod>2013-11-02</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///welcome.html</loc>
-  <lastmod>2013-10-31</lastmod>
+  <lastmod>2013-11-03</lastmod>
  </url>
 </urlset>

@@ -4,9 +4,9 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 9
-_modified_time = 1383479071.379111
+_modified_time = 1383482743.832748
 _enable_loop = True
-_template_filename = u'/home/mille_j/nikoladev/johnnikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/index_helper.tmpl'
+_template_filename = u'/home/mille_j/JohnBlog/nikola/lib/python2.7/site-packages/nikola/data/themes/base/templates/index_helper.tmpl'
 _template_uri = u'index_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['mathjax_script', 'html_pager']
@@ -57,7 +57,7 @@ def render_html_pager(context):
             __M_writer(u'    <li class="previous">\n        <a href="')
             # SOURCE LINE 7
             __M_writer(unicode(prevlink))
-            __M_writer(u'">&larr; ')
+            __M_writer(u'" rel="prev">&larr; ')
             __M_writer(unicode(messages("Newer posts")))
             __M_writer(u'</a>\n    </li>\n')
         # SOURCE LINE 10
@@ -66,7 +66,7 @@ def render_html_pager(context):
             __M_writer(u'    <li class="next">\n        <a href="')
             # SOURCE LINE 12
             __M_writer(unicode(nextlink))
-            __M_writer(u'">')
+            __M_writer(u'" rel="next">')
             __M_writer(unicode(messages("Older posts")))
             __M_writer(u' &rarr;</a>\n    </li>\n')
         # SOURCE LINE 15
