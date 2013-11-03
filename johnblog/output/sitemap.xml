@@ -77,6 +77,22 @@
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
+  <loc>http:///galleries/linux/index.html</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
+  <loc>http:///galleries/linux/rss.xml</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
+  <loc>http:///galleries/linux/rsyslog/index.html</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
+  <loc>http:///galleries/linux/rsyslog/rss.xml</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
   <loc>http:///galleries/rss.xml</loc>
   <lastmod>2013-11-03</lastmod>
  </url>
@@ -125,11 +141,19 @@
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
+  <loc>http:///stories/dns-bind9named-part-5.html</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
   <loc>http:///stories/eucalyptus.html</loc>
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///stories/generic-san-adapter.html</loc>
+  <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
+  <loc>http:///stories/log-with-rsyslog.html</loc>
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
