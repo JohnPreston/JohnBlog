@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Eucalyptus - Create bfEBS EMIs"><meta name="author" content="John Mille [John Preston]"><title>Create a bEBS EMI with Eucalyptus | A Geek Story</title><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">A Geek Story</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav"><li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
+
+        </li></ul><ul class="nav navbar-nav navbar-right"><li>
+    <a href="create-a-bebs-emi-with-eucalyptus.rst" id="sourcelink">Source</a>
+    </li>
+
+        </ul></div><!-- /.navbar-collapse -->
+</nav><!-- End of Menubar --><div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+    <div class="postbox">
+    
+    <h1>Create a bEBS EMI with Eucalyptus</h1>
+
+    <hr><small>
+        Posted: <time class="published" datetime="2013-10-31T12:55:37">2013-10-31 12:55</time>
+        
+
+        
+          |  More posts about
+            <a class="tag" href="../categories/eucalyptus.html"><span class="badge badge-info">eucalyptus</span></a>
+
+    </small>
+    <hr><p>There are two types of EMI : Instance-Store and EBS.</p>
+<p>In Cloud platforms, there are two types of backend-storing when a VM is launched : instance-store and EBS. First of all, let see the differences :</p>
+<p>An instance-store VM will be launched from a S3 image which will be stored in Walrus (like any S3 bucket) in several files. When the VM is launched, the Node Controller (NC) will download the files and store it in his own local hard drive. Then, it will run the new VM from these files. That means the VM is ran "locally". Faster to be launched, but, volatile : on stopping the VM, it will be destroyed and all files on it too. Like an ephemeral disk.</p>
+<p>EBS Backed Instances, have their HDD on the Storage Contoller (SC). Each time you create a new VM, it will copy the original snapnhot to be a volume like another. It will be auto-attached to the Instance, being /dev/sda, and the VM will start her system from this, as if it was a generic server with its own HDD. It maybe a little longer than a Instance-Store to be launched, but you can stop these VMs and keep all datas (be carefull, it doesn't mean it will keep the ephemerals one)</p>
+<div class="section" id="so-as-really-often-asked-we-re-gonna-see-how-to-do-a-bfebs-instance-for-any-usage">
+<h2>So, as really often asked we're gonna see how to do a bfEBS instance for any usage.</h2>
+<p>First, it's really interesting to know how to setup instance-store VMs, and it is very, especially using the eustore.</p>
+<p>We will consider your cloud is correctly setup, all services are enabled and working. Do not forget to source the eucarc file you must have downloaded. I DO suggest you to have at least one graphical client (setenv XForwarding if not) to use virt-manager. It's a pretty useful and powerfull tool to manage your XEN / KVM nodes, on remote.</p>
+<p>Once you're ready, begin with download an instance store from the eustore. Begin with listing all images avaiable on eustore :</p>
+<pre class="code bash literal-block">
+euser@clc-0 <span class="nv">$&gt;</span>euca-describe-services -E
+</pre>
+</div>
+    
+    <ul class="pager"></ul><div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="nikolademo";
+            var disqus_url="http:///posts/create-a-bebs-emi-with-eucalyptus.html";
+        var disqus_title="Create a bEBS EMI with Eucalyptus";
+        var disqus_identifier="cache/posts/create-a-bebs-emi-with-eucalyptus.html";
+        var disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    
+
+    </div>
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2013         <a href="mailto:johnpreston@ews-network.net">John Mille [John Preston]</a> - Powered by         <a href="http://getnikola.com">Nikola</a>         
+        </footer></div>
+</div>
+
+
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script></body></html>
