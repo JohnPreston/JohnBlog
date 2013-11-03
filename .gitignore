@@ -2,3 +2,5 @@
 *.pyc
 nikola/*
 johnblog/cache/*
+johnblog/output/*
+johnblog/.doit*
