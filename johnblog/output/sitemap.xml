@@ -6,11 +6,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http:///2013/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///archive.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///categories/bfebs.html</loc>
@@ -21,12 +21,36 @@
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
+  <loc>http:///categories/centos.html</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/centos.xml</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
   <loc>http:///categories/cloud-computing.html</loc>
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
   <loc>http:///categories/cloud-computing.xml</loc>
   <lastmod>2013-11-03</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/cloud.html</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/cloud.xml</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/debian.html</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/debian.xml</loc>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///categories/ebs.html</loc>
@@ -38,15 +62,23 @@
  </url>
  <url>
   <loc>http:///categories/eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///categories/eucalyptus.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///categories/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/linux.html</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
+  <loc>http:///categories/linux.xml</loc>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///en/archive.html</loc>
@@ -258,63 +290,63 @@
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/ebs-istores/index.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/ebs-istores/rss.xml</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/index.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/san-adapter/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/san-adapter/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/ews-front/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/ews-front/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/linux/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/linux/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/linux/rsyslog/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/linux/rsyslog/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///galleries/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///listings/index.html</loc>
@@ -329,56 +361,56 @@
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
+  <loc>http:///posts/welcome.html</loc>
+  <lastmod>2013-11-05</lastmod>
+ </url>
+ <url>
   <loc>http:///rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/create-a-bf-ebs-with-eucalyptus.html</loc>
-  <lastmod>2013-11-04</lastmod>
- </url>
- <url>
-  <loc>http:///stories/create-a-bfebs.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-1.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-2.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-3.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-4.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-5.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/eucalyptus.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/generic-san-adapter.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/instance-store-vs-ebs-backed.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/log-with-rsyslog.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/manage-security-groups.html</loc>
-  <lastmod>2013-11-04</lastmod>
+  <lastmod>2013-11-05</lastmod>
  </url>
  <url>
   <loc>http:///stories/welcome.html</loc>

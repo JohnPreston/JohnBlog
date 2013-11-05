@@ -29,8 +29,31 @@
             
     <h1>Create a bf EBS with Eucalyptus</h1>
     <p>There are two types of instances : Instance-Store and EBS-Backend. As you will be able to see here (<a class="reference external" href="http://url-vers-explication-ebs-instancestrore">http://url-vers-explication-ebs-instancestrore</a>) EBS give you the capacity to keep your datas on SAN, to stop / start a VM without loosing datas. But there is no "3 Clicks" way to have one today. So here we are going to see an easy and sure way to create your EBS EMIs.</p>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple"><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#requirements" id="id1">Requirements</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#original-vm" id="id2">Original VM</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#first-case" id="id3">First case</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#before-creating-our-vm" id="id4">Before creating our VM</a></li>
+</ul></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#second-case" id="id5">Second case</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#use-virt-manager" id="id6">Use virt-manager</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#use-ssh-keys" id="id7">Use ssh-keys</a></li>
+</ul></li>
+</ul></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#run-our-new-emi" id="id8">Run our new EMI</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#prepare-our-fresh-vm-for-eucalyptus" id="id9">Prepare our fresh VM for Eucalyptus</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#on-linux" id="id10">On linux</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#on-windows" id="id11">On Windows</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#at-that-moment" id="id12">At that moment</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#init-scripts" id="id13">Init scripts</a></li>
+</ul></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#final-steps" id="id14">Final steps</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#first-case-second-part" id="id15">First case - Second part</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#second-case-second-part" id="id16">Second case - Second part</a></li>
+</ul></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#the-end" id="id17">The end</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#frequently-asked-questions" id="id18">Frequently asked questions</a><ul><li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#question" id="id19">Question</a></li>
+<li><a class="reference internal" href="create-a-bf-ebs-with-eucalyptus.html#answer" id="id20">Answer</a></li>
+</ul></li>
+</ul></div>
 <div class="section" id="requirements">
-<h2>Requirements</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id1">Requirements</a></h2>
 <p>Of course, you will need to have a working Eucalyptus Cloud. It seems obviouis that you have enough compute capacity to run new instances and enough hard drive free space to create EBS and snapshots. Depending on your platform, some steps may be long.</p>
 <p>Let's check some cloud-properties and status :</p>
 <pre class="code bash literal-block">
@@ -47,20 +70,20 @@ admin@clc-0 <span class="nv">$&gt;</span>euca-create-volume -s 5 -z cluster <spa
 <li>walrus.storagemaxtotalsnapshotsizeingb : This is the maximum size allocated for all your snapshots</li>
 </ul></div>
 <div class="section" id="original-vm">
-<h2>Original VM</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id2">Original VM</a></h2>
 <p>Most of people want to do an EBS EMI from an Instance-Store one. I am not part of these people. I prefer to fully create an instance from my own. There are ways :</p>
 <ul class="simple"><li>You have physical access to the NC, and the capacity to use and external medium (USB CD/DVD Reader - USB Key) to boot on and setup the OS</li>
 <li>You do not have physical access but you have SSH access to it and your client has graphical X Server (You can also use XMing for Windows).</li>
 <li>The computer you are working with supports virtualization.</li>
 </ul><div class="section" id="first-case">
-<h3>First case</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id3">First case</a></h3>
 <p>Here, we only have to create a volume, snapshot it and register an EMI. Then run a new instance. Obviously, no OS on the EBS. But thanks to the USB Device, you can add a PCI device on the fly, and declare to boot from it. Then, do your setup. When OS setup finished, you have your VM. Stop it, snapshot the root device and re-create an EMI.</p>
 <div class="attention">
 <p class="first admonition-title">Attention!</p>
 <p class="last">You will need to use the init scripts provided by Eucalyptus or create your own to have SSH-Key based access and other functions.</p>
 </div>
 <div class="section" id="before-creating-our-vm">
-<h4>Before creating our VM</h4>
+<h4><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id4">Before creating our VM</a></h4>
 <p>I advice you to enable graphical access (via VNC) to the VM created by Eucalyptus. To do so, uncomment vnc section in /etc/eucalyptus/libvirt.xsl :</p>
 <pre class="code xml literal-block">
 <span class="nt">&lt;graphics</span> <span class="na">type=</span><span class="s">'vnc'</span> <span class="na">port=</span><span class="s">'-1'</span> <span class="na">autoport=</span><span class="s">'yes'</span> <span class="na">keymap=</span><span class="s">'en-us'</span><span class="nt">/&gt;</span>
@@ -72,7 +95,7 @@ sudo service eucalyptus-nc restart
 </div>
 </div>
 <div class="section" id="second-case">
-<h3>Second case</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id5">Second case</a></h3>
 <p>We now need an Instance (an instance-store one). This one will allow us to use our EBS in the future. Will eustore, download one and run it :</p>
 <pre class="code bash literal-block">
 admin@clc-0 <span class="nv">$&gt;</span>eustore-describe-images
@@ -81,11 +104,11 @@ admin@clc-0 <span class="nv">$&gt;</span>euca-run-instances <span class="nv">$EM
 </pre>
 <p>I do advice you to create specific Security Groups depending on your Instance usage.</p>
 <div class="section" id="use-virt-manager">
-<h4>Use virt-manager</h4>
+<h4><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id6">Use virt-manager</a></h4>
 <p>I am a shell guy, mean I do everything in shell windows, but it is also true to say that GUI have a lot of benefits. Here, what we are going to do is to use virt-manager. It is a very powerful tool to manage KVM / XEN on remote and redirect all through SSH. So, here I am on a CentOS client with graphical interface. Be sure to have ssh access to your NC.</p>
 </div>
 <div class="section" id="use-ssh-keys">
-<h4>Use ssh-keys</h4>
+<h4><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id7">Use ssh-keys</a></h4>
 <p>For any action made by virt-manager, you will be prompted for your password. To avoid this and guarantee a full secured permanent access, use ssh-keys : generate a ssh-key for your current user, then, sync it for the root user on your NC :</p>
 <pre class="code bash literal-block">
 user@client <span class="nv">$&gt;</span>ssh-keygen -t rsa -b 4096
@@ -104,7 +127,7 @@ user@client <span class="nv">$&gt;</span>ssh-copy-id -i <span class="nv">$HOME</
 </div>
 </div>
 <div class="section" id="run-our-new-emi">
-<h2>Run our new EMI</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id8">Run our new EMI</a></h2>
 <p>Here we are ! That's the usual way to install a new operating system. You will be able to assign the values you want to your original VM.</p>
 <div class="warning">
 <p class="first admonition-title">Warning</p>
@@ -121,10 +144,10 @@ user@client <span class="nv">$&gt;</span>ssh-copy-id -i <span class="nv">$HOME</
 </ul></div>
 </div>
 <div class="section" id="prepare-our-fresh-vm-for-eucalyptus">
-<h2>Prepare our fresh VM for Eucalyptus</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id9">Prepare our fresh VM for Eucalyptus</a></h2>
 <p>Our setup is finished, and after reboot we are glad to see our system running properly. But, it is a too specific one. So here we are going to "clean" this VM to be the most generic possible. We also are going to setup all our usual packages.</p>
 <div class="section" id="on-linux">
-<h3>On linux</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id10">On linux</a></h3>
 <p>At startup, you system created some "rules" which come from your hardware configuration. We need to delete this, because all the instances you will create from this EMI will have different properties (i.e. the eth0 MAC address). So begin with deleting these rules :</p>
 <pre class="code bash literal-block">
 rm -rfv /etc/udev/rules.d/* <span class="c"># rules usually are in the same directory for most common distros. Specifyt this path according to yours.</span>
@@ -143,11 +166,11 @@ rm -rfv /etc/ssh/ssh_host_*
 </pre>
 </div>
 <div class="section" id="on-windows">
-<h3>On Windows</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id11">On Windows</a></h3>
 <p>There are tools available on eucalyptus documentation website which will allow your to clean your EMI in addition to a sysprep</p>
 </div>
 <div class="section" id="at-that-moment">
-<h3>At that moment</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id12">At that moment</a></h3>
 <p>Here, our VM is able to get connected to the network and you can log in with SSH. There, is a list of tools you <strong>must</strong> setup to use advanced EC2 scripts :</p>
 <pre class="code bash literal-block">
 root@instance <span class="nv">$&gt;</span>apt-get install curl bash-completion euca2ools ntp ntpdate python-boto
@@ -169,7 +192,7 @@ root@instance <span class="nv">$&gt;</span>unlink /etc/localtime <span class="o"
 </div>
 </div>
 <div class="section" id="init-scripts">
-<h3>Init scripts</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id13">Init scripts</a></h3>
 <p>This is no magic when you can log on your VMs with ssh private key. A script put the public key on the server for the user you wanted to be able to log on. So, now, several choices : do your own scripts, or use existing ones. You will be able to find some scripts on <a class="reference external" href="https://github.com/eucalyptus/Eucalyptus-Scripts">https://github.com/eucalyptus/Eucalyptus-Scripts</a> . Once you get the script you want, run it manually to be sure everything is working properly.</p>
 <div class="note">
 <p class="first admonition-title">Note</p>
@@ -178,10 +201,10 @@ root@instance <span class="nv">$&gt;</span>unlink /etc/localtime <span class="o"
 </div>
 </div>
 <div class="section" id="final-steps">
-<h2>Final steps</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id14">Final steps</a></h2>
 <p>Here our VM is ready. Be sure you comply with all requirements, followed my tips ;) and cleaned it. Your last command on it can also be halt, on shut it down thanks to euca-stop-instances. On the VM is stopped, we are back to our 2 cases :</p>
 <div class="section" id="first-case-second-part">
-<h3>First case - Second part</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id15">First case - Second part</a></h3>
 <p>Your VM is already on an EBS. So, once it is stopped, just snapshot the volume, and register your new EMI with the snapshot id :</p>
 <pre class="code literal-block">
 admin@clc-0 $&gt;euca-register -n 'name' -d 'description' -b /dev/sda=snap-ID --root-device-name /dev/sda -a ARCH # short way
@@ -189,7 +212,7 @@ admin@clc-0 %&gt;euca-register -n 'name' -d 'description' -b /dev/sda=snap-ID:si
 </pre>
 </div>
 <div class="section" id="second-case-second-part">
-<h3>Second case - Second part</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id16">Second case - Second part</a></h3>
 <p>The hard drive raw file of your VM is on the Node-Controller (or on your computer) in /var/lib/libvirt/images/ and usually uses .img extension. Get this file. Now, create 2 EBS volumes on eucalyptus. One of the same size as the hard drive of your VM and another a little bigger. Then attach both to your instance-store instance. Connect to the Instance with your ssh-key, and see if the disks were correctly detected :</p>
 <pre class="code bash literal-block">
 root@instance <span class="nv">$&gt;</span>dmesg
@@ -208,20 +231,20 @@ root@nc-0<span class="nv">$ </span>&gt;rsync -e <span class="s1">'ssh -i $HOME/c
 </div>
 </div>
 <div class="section" id="the-end">
-<h2>The end</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id17">The end</a></h2>
 <p>If your VM is running properly, you can reach it and log onto, you have your EBS backed instance !!!
 So now if you plan to make new EBS backed with any other tools on it (Web Server or anything else), run a VM from the EMI you've just done,
 do your stuff, register, snap it and register it (Do not forget to clean it !)</p>
 </div>
 <div class="section" id="frequently-asked-questions">
-<h2>Frequently asked questions</h2>
+<h2><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id18">Frequently asked questions</a></h2>
 <p>Once you have this EMI, a lot of questions may come. Here I tried to summerise the most frequently asked.</p>
 <div class="section" id="question">
-<h3>Question</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id19">Question</a></h3>
 <p><em>If I do changes on a VM from my EBS EMI, will all the others have the changes too ?</em></p>
 </div>
 <div class="section" id="answer">
-<h3>Answer</h3>
+<h3><a class="toc-backref" href="create-a-bf-ebs-with-eucalyptus.html#id20">Answer</a></h3>
 <p><strong>No</strong>. The EBS of your Instance has been copied from the snapshot, but you are not running your VM from the snapshot itsself. To keep any change on your VM for future VMs, clean, stop, snap and register it. Then, all the new instances you will run from this newly created EMI will have your changes.</p>
 </div>
 </div>

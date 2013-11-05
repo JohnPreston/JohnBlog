@@ -7,6 +7,10 @@
 
 On the cloud, everything is acting as a service. That's also true for security. As this is a managed platform, you will also be able to manage firewall rules easily, via API.
 
+.. class:: alert alert-info pull-right
+
+.. contents::
+
 Security groups - Definition
 ----------------------------
 

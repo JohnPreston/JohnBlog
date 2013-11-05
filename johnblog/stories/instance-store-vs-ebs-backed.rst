@@ -5,6 +5,10 @@
 .. title: Instance-Store vs EBS-backed
 .. slug: instance-store-vs-ebs-backed
 
+.. class:: alert alert-info pull-right
+
+.. contents::
+
 What is that ?
 ==============
 

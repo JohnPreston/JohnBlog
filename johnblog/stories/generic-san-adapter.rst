@@ -5,6 +5,10 @@
 .. title: Generic SAN Adapter
 .. slug: generic-san-adapter
 
+.. class:: alert alert-info pull-right
+
+.. contents::
+
 As we all can not buy Eucalyptus with registration, some people contribute to community with packages and addons, like Nathanxu (https://github.com/nathanxu) who is in Eucalyptus team. There, he developed a generic san adapter I've tested on my old CX300 SAN. There is a network map
 
 .. image:: /galleries/eucalyptus/san-adapter/LAN-SAN.jpg

@@ -7,6 +7,9 @@
 
 There are two types of instances : Instance-Store and EBS-Backend. As you will be able to see here (http://url-vers-explication-ebs-instancestrore) EBS give you the capacity to keep your datas on SAN, to stop / start a VM without loosing datas. But there is no "3 Clicks" way to have one today. So here we are going to see an easy and sure way to create your EBS EMIs.
 
+.. class:: alert alert-info pull-right
+
+.. contents::
 
 Requirements
 ============
