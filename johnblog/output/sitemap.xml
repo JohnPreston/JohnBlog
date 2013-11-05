@@ -257,8 +257,16 @@
   <lastmod>2013-11-03</lastmod>
  </url>
  <url>
+  <loc>http:///galleries/eucalyptus/ebs-istores/index.html</loc>
+  <lastmod>2013-11-04</lastmod>
+ </url>
+ <url>
+  <loc>http:///galleries/eucalyptus/ebs-istores/rss.xml</loc>
+  <lastmod>2013-11-04</lastmod>
+ </url>
+ <url>
   <loc>http:///galleries/eucalyptus/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///galleries/eucalyptus/rss.xml</loc>
@@ -326,7 +334,7 @@
  </url>
  <url>
   <loc>http:///stories/create-a-bf-ebs-with-eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/create-a-bfebs.html</loc>
@@ -334,39 +342,43 @@
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-1.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-2.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-3.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-4.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/dns-bind9named-part-5.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/generic-san-adapter.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
+ </url>
+ <url>
+  <loc>http:///stories/instance-store-vs-ebs-backed.html</loc>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/log-with-rsyslog.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/manage-security-groups.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <lastmod>2013-11-04</lastmod>
  </url>
  <url>
   <loc>http:///stories/welcome.html</loc>
