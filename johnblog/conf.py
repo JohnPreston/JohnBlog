@@ -7,10 +7,10 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "John Mille [John Preston]"
-BLOG_TITLE = "EWS Network"
+BLOG_TITLE = "Admin Blog"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://"
+SITE_URL = "https://adminblog.ews-network.net/stories/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
@@ -453,7 +453,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # """
 
 # Hide link to source for the posts?
-# HIDE_SOURCELINK = False
+HIDE_SOURCELINK = True
 # Copy the source files for your pages?
 # Setting it to False implies HIDE_SOURCELINK = True
 # COPY_SOURCES = True

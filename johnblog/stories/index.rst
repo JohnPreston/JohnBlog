@@ -27,6 +27,10 @@ Welcome on my new site. Here, I will redact some tutorials to allow you to under
 
       .. _`Create a bfEBS EMI`: /stories/create-a-bf-ebs-with-eucalyptus.html
 
+    - `Generic SAN Adapter`_.
+
+      .. _`Generic SAN Adapter`: /stories/generic-san-adapter.html
+
 
 - Linux - System Administration**
 

@@ -5,423 +5,179 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http:///2013/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/2013/index.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///archive.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/archive.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/bfebs.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/bfebs.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/bfebs.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/bfebs.xml</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/centos.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/cloud-computing.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/centos.xml</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/cloud-computing.xml</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/cloud-computing.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/ebs.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/cloud-computing.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/ebs.xml</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/cloud.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/eucalyptus.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/cloud.xml</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/eucalyptus.xml</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///categories/debian.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/categories/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/debian.xml</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/ebs-istores/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/ebs.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/ebs-istores/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/ebs.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/eucalyptus.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/eucalyptus.xml</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/san-adapter/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/eucalyptus/san-adapter/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/linux.html</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/ews-front/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///categories/linux.xml</loc>
-  <lastmod>2013-11-05</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/ews-front/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/archive.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/categories/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/linux/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/eucalyptus/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/linux/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/eucalyptus/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/linux/rsyslog/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/eucalyptus/san-adapter/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/linux/rsyslog/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/eucalyptus/san-adapter/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/galleries/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/ews-front/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/ews-front/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/listings/index.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/posts/create-a-bebs-emi-with-eucalyptus.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/linux/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/posts/eucalyptus-create-a-bfebs.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/linux/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/rss.xml</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/linux/rsyslog/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/create-a-bf-ebs-with-eucalyptus.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/linux/rsyslog/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/dns-bind9named-part-1.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/galleries/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/dns-bind9named-part-2.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/dns-bind9named-part-3.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/dns-bind9named-part-4.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/create-a-bf-ebs-with-eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/dns-bind9named-part-5.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/dns-bind9named-part-1.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/eucalyptus.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/dns-bind9named-part-2.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/generic-san-adapter.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/dns-bind9named-part-3.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/index.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/dns-bind9named-part-4.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/instance-store-vs-ebs-backed.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/dns-bind9named-part-5.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/log-with-rsyslog.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/manage-security-groups.html</loc>
+  <lastmod>2013-12-06</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/generic-san-adapter.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/stories/welcome.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
  <url>
-  <loc>http:///en/stories/log-with-rsyslog.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///en/stories/manage-security-groups.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/archive.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/categories/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/eucalyptus/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/eucalyptus/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/eucalyptus/san-adapter/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/eucalyptus/san-adapter/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/ews-front/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/ews-front/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/linux/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/linux/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/linux/rsyslog/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/linux/rsyslog/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/galleries/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/rss.xml</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/create-a-bf-ebs-with-eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/dns-bind9named-part-1.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/dns-bind9named-part-2.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/dns-bind9named-part-3.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/dns-bind9named-part-4.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/dns-bind9named-part-5.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/generic-san-adapter.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/log-with-rsyslog.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///fr/stories/manage-security-groups.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/ebs-istores/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/ebs-istores/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/san-adapter/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/eucalyptus/san-adapter/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/ews-front/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/ews-front/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/linux/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/linux/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/linux/rsyslog/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/linux/rsyslog/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///galleries/rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///listings/index.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///posts/create-a-bebs-emi-with-eucalyptus.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///posts/eucalyptus-create-a-bfebs.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///posts/welcome.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///rss.xml</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/create-a-bf-ebs-with-eucalyptus.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/dns-bind9named-part-1.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/dns-bind9named-part-2.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/dns-bind9named-part-3.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/dns-bind9named-part-4.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/dns-bind9named-part-5.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/eucalyptus.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/generic-san-adapter.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/index.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/instance-store-vs-ebs-backed.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/log-with-rsyslog.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/manage-security-groups.html</loc>
-  <lastmod>2013-11-05</lastmod>
- </url>
- <url>
-  <loc>http:///stories/welcome.html</loc>
-  <lastmod>2013-11-03</lastmod>
- </url>
- <url>
-  <loc>http:///welcome.html</loc>
-  <lastmod>2013-11-03</lastmod>
+  <loc>https://adminblog.ews-network.net/stories/welcome.html</loc>
+  <lastmod>2013-11-26</lastmod>
  </url>
 </urlset>
